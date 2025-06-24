@@ -4,25 +4,27 @@
         <meta charset="UTF-8">
         <title>Local Storage</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
-    <body class="box-border bg-[url(lib/shawn-nmpW_WwwVSc-unsplash.jpg)] bg-cover min-h-screen flex justify-center align-center items-center text-center font-sans">
+    <body class="box-border bg-[url(lib/shawn-nmpW_WwwVSc-unsplash.jpg)] bg-cover min-h-screen flex justify-center items-start font-sans">
         
-        <img src="lib/279-logo-1712247243.902color-0077B6.svg" alt="Logo" class="w-[500px] h-[500px] mx-auto mb-4" />
-        
-        <div class="wrapper">
-            <h2>Local Tapas</h2>
-            <p></p>
-            <ul class="plates">
-                <li>Loading Tapes ... </li>
-            </ul>
-            <form class="add-items">
-                <input type="text" name="item" placeholder="Item Name" required>
-                <input type="submit" value="+ Add Item"> 
-            </form>
+        <div class="flex flex-col items-center">
+            <img src="lib/279-logo-1712247243.902color-0077B6.svg" alt="Logo" class="w-[500px] h-[300px] fill-white bg-black/0 rounded-lg" />
+            
+            <div class="wrapper p-[20px] max-w-[350px] bg-[rgba(255,255,255,0.95)] shadow-[0_0_0_2px_rgba(0,0,0,0.3)] rounded-sm">
+                <h2 class="text-center ">Local Tapas</h2>
+                <p></p>
+                <ul class="plates text-left list-none">
+                </ul>
+                <form class="add-items">
+                    <input type="text" name="item" placeholder="Item Name" required>
+                    <input type="submit" value="+ Add Item"> 
+                </form>
+            </div>
         </div>
 
         <script src="lib/script.js"></script>
     </body>
 </html>
+
